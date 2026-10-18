@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141414">
+  <title>OURFLIX — Riddhi &amp; Aditya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="no-scroll">
+
+  <!-- ============ SCREEN 1: CURTAIN OPENING INTRO ============ -->
+  <section id="screen-splash" class="screen splash">
+    <!-- behind the curtain: the logo reveal -->
+    <div class="splash-glow"></div>
+    <div id="spectrum" class="spectrum" aria-hidden="true"></div>
+    <div class="splash-center">
+      <div class="splash-logo">
+        <span id="splash-monogram" class="splash-monogram"></span>
+        <span class="splash-original">ORIGINAL</span>
+      </div>
+      <h1 id="splash-brand" class="splash-brand"></h1>
+      <p class="splash-sub">A Limited Romantic Series • Starring <strong id="splash-names"></strong></p>
+    </div>
+
+    <!-- the curtains -->
+    <div class="curtain curtain-l"></div>
+    <div class="curtain curtain-r"></div>
+    <div class="valance"></div>
+
+    <div id="curtain-cta" class="curtain-cta">
+      <p class="cta-presents brand-font">OURFLIX PRESENTS</p>
+      <p id="cta-names" class="cta-names"></p>
+      <button id="splash-btn" class="btn btn-gold btn-pill">▶&nbsp; Tap to open the curtain &nbsp;🔊</button>
+      <p class="splash-hint">🎧 Turn your sound on</p>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 2: WHO'S WATCHING ============ -->
+  <section id="screen-profiles" class="screen profiles hidden">
+    <div class="profiles-brand brand-font" id="profiles-brand"></div>
+    <div class="profiles-box">
+      <h2>Who's watching tonight?</h2>
+      <p class="muted">Select your profile to unlock our private anniversary dashboard</p>
+      <div id="profiles-grid" class="profiles-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3: THE YES / NO GAME (4 ROUNDS) ============ -->
+  <section id="screen-gate" class="screen gate hidden">
+    <div id="gate-bg" class="gate-bg"></div>
+    <div class="gate-shade"></div>
+
+    <div class="gate-card glass">
+      <div class="gate-avatar-wrap">
+        <img id="gate-avatar" class="gate-avatar" alt="">
+        <span class="gate-heart">❤</span>
+      </div>
+      <div id="gate-dots" class="gate-dots"></div>
+      <span id="gate-badge" class="gate-badge"></span>
+      <h2 id="gate-question" class="gate-question"></h2>
+      <p id="gate-sub" class="muted gate-sub"></p>
+      <div id="gate-pill" class="gate-pill"></div>
+      <div class="gate-actions">
+        <button id="gate-yes" class="btn btn-red btn-yes">♥ <span id="gate-yes-label"></span></button>
+        <span id="gate-no-slot" class="gate-no-slot"></span>
+      </div>
+      <p id="gate-toast" class="gate-toast"></p>
+    </div>
+    <button id="gate-no" class="btn btn-grey btn-no" type="button"></button>
+  </section>
+
+  <!-- ============ SCREEN 4: DASHBOARD ============ -->
+  <div id="screen-dashboard" class="dashboard hidden">
+
+    <header id="navbar" class="navbar">
+      <div class="nav-inner">
+        <div class="nav-left">
+          <a href="#hero" class="brand-font nav-brand">♥ <span id="nav-brand"></span></a>
+          <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#episodes">Episodes</a>
+            <a href="#polaroids">Polaroids</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#songs">Songs</a>
+            <a href="#reasons">Reasons</a>
+            <a href="#cast">Cast</a>
+            <a href="#secret">Letter</a>
+          </nav>
+        </div>
+        <div class="nav-right">
+          <div class="bell-wrap">
+            <button id="bell-btn" class="icon-btn" aria-label="Love notes">🔔<span class="bell-count">3</span></button>
+            <div id="bell-panel" class="bell-panel glass hidden">
+              <div class="bell-head"><span>❤️ Relationship Alerts</span><span class="red">New</span></div>
+              <div id="bell-list"></div>
+            </div>
+          </div>
+          <button id="nav-profile" class="profile-chip" aria-label="Switch profile">
+            <img id="nav-avatar" alt=""><span id="nav-name"></span><i>▾</i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO + LIVE TIMER -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <img id="hero-blur" class="hero-blur" alt="" aria-hidden="true">
+        <img id="hero-img" alt="Riddhi and Aditya together">
+        <div class="hero-vig-left"></div>
+        <div class="hero-vig-bottom"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="hero-badge-row">
+            <span class="top10 brand-font">TOP 10</span>
+            <span id="hero-badge" class="hero-badge"></span>
+          </div>
+          <h1 id="hero-title" class="hero-title brand-font"></h1>
+          <div class="hero-tags">
+            <span class="tag-green" data-egg="99.9% soulmate match ❤️ — calculated by fate & late-night chats!">99.9% Match</span>
+            <span class="tag-plain">2025–Forever</span>
+            <span class="tag-outline" data-egg="Rated R for Ridiculously Cute Together 🥰">R — Romantic</span>
+            <span class="tag-plain tag-fill">4K Ultra Love</span>
+            <span class="tag-red" data-egg="Renewed for 100+ more seasons together! 🥂">∞ Infinite Seasons</span>
+          </div>
+          <p id="hero-synopsis" class="hero-synopsis"></p>
+
+          <div class="watching glass">
+            <div class="watching-top">
+              <span><i class="ping"></i><b>Continue Watching: <span id="watch-title"></span></b></span>
+              <span class="mono muted" id="watch-pct"></span>
+            </div>
+            <div class="bar"><div id="watch-bar" class="bar-fill"></div></div>
+            <div class="watching-bottom">
+              <span id="watch-as" class="muted"></span>
+              <span id="watch-next" class="green"></span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <button class="btn btn-white" id="btn-play">▶&nbsp; Play Episode 1</button>
+            <button class="btn btn-dark" id="btn-list"><span id="list-icon" class="red">＋</span>&nbsp;<span id="list-text">My List / ❤️</span></button>
+            <button class="btn btn-dark" id="btn-info">ⓘ&nbsp; More Info</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE TIMER (counts from 20 Dec 2025, 5:35 PM) -->
+    <section class="timer-wrap">
+      <div class="timer glass">
+        <div class="timer-glow"></div>
+        <div class="timer-head">
+          <span class="timer-eyebrow">Live Relationship Timer</span>
+          <h3>Time Spent Loving You <span class="red pulse">♥</span></h3>
+          <div class="timer-months"><span id="t-months"></span></div>
+          <div class="timer-foot">
+            <div>📅 Since <strong id="t-since"></strong></div>
+            <div>💓 ~<strong id="t-beats" class="green mono"></strong> heartbeats shared</div>
+            <div>🪖 First met: <strong id="t-met"></strong></div>
+          </div>
+          <div class="timer-next">🎉 <span id="t-next"></span></div>
+        </div>
+        <div class="timer-grid">
+          <div class="t-box"><b id="t-days">0</b><small>Days</small></div>
+          <div class="t-box"><b id="t-hours">00</b><small>Hours</small></div>
+          <div class="t-box"><b id="t-mins">00</b><small>Minutes</small></div>
+          <div class="t-box t-red"><b id="t-secs">00</b><small>Seconds</small></div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <!-- EPISODES -->
+      <section id="episodes">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow red">Season 1 • Core Memories</span>
+            <h2>Episodes of Us <small class="chip">Tap any episode to open it</small></h2>
+          </div>
+          <button class="btn btn-chip" id="btn-random">🔀 Surprise Memory</button>
+        </div>
+        <div id="episodes-grid" class="ep-grid"></div>
+      </section>
+
+      <!-- POLAROIDS -->
+      <section id="polaroids">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow amber">Interactive 3D Keepsakes</span>
+            <h2>Polaroid Memory Wall <small class="chip">Tap a Polaroid to flip it 🔄</small></h2>
+          </div>
+          <button class="btn btn-chip" id="btn-flip-all">🔄 Flip All</button>
+        </div>
+        <div id="polaroid-grid" class="pol-grid"></div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow red">The Full Photo Reel</span>
+            <h2><span id="g-a-title"></span> <small class="chip">Tap a photo to enlarge</small></h2>
+          </div>
+        </div>
+        <div id="gallery-a" class="g-row"></div>
+
+        <div class="sec-head g-second">
+          <div>
+            <span class="eyebrow red">Co-Starring</span>
+            <h2 id="g-b-title"></h2>
+          </div>
+        </div>
+        <div id="gallery-b" class="g-row"></div>
+      </section>
+
+      <!-- SONGS -->
+      <section id="songs">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow green">Original Soundtrack</span>
+            <h2>Our Songs <small class="chip">Tap a song to play 🎵</small></h2>
+          </div>
+        </div>
+        <div id="songs-grid" class="song-grid"></div>
+      </section>
+
+      <!-- REASONS -->
+      <section id="reasons">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow red">Top Reasons</span>
+            <h2><span id="reasons-title"></span> <small class="chip">Tap a card to reveal ❤️</small></h2>
+          </div>
+        </div>
+        <div id="reasons-grid" class="reason-grid"></div>
+      </section>
+
+      <!-- CAST -->
+      <section id="cast">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow amber">Behind the Scenes</span>
+            <h2>Cast &amp; Crew <small class="chip">Tap a card for a secret 🤫</small></h2>
+          </div>
+        </div>
+        <div id="cast-grid" class="cast-grid"></div>
+      </section>
+
+      <!-- SECRET LETTER (text comes from data.js -> secret.letter) -->
+      <section id="secret">
+        <div class="sec-head">
+          <div>
+            <span id="secret-eyebrow" class="eyebrow red"></span>
+            <h2><span id="secret-title"></span> <small class="chip">💌</small></h2>
+          </div>
+        </div>
+        <div class="secret-wrap">
+          <button id="envelope" class="envelope" type="button" aria-label="Open the secret letter">
+            <span class="env-flap"></span>
+            <span class="env-seal">♥</span>
+            <span id="env-to" class="env-to"></span>
+          </button>
+          <p id="secret-hint" class="muted secret-hint"></p>
+
+          <div id="letter-paper" class="letter-paper hidden">
+            <div id="letter-text" class="letter-text"></div>
+            <div id="letter-sign" class="letter-sign"></div>
+          </div>
+          <button id="letter-close" class="btn btn-chip hidden" type="button">✉️ Fold the letter back</button>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="brand-font footer-brand">♥ <span id="footer-brand"></span></div>
+        <p class="muted">Made with love by <span id="footer-his"></span>, for <span id="footer-her"></span> — since <span id="footer-since"></span></p>
+        <p class="credit">Developed by <strong id="footer-dev"></strong> &nbsp;•&nbsp; © All rights reserved</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- ============ MODALS ============ -->
+  <div id="modal-episode" class="modal hidden">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box glass">
+      <button class="modal-x" data-close aria-label="Close">✕</button>
+      <div class="modal-img"><img id="ep-img" alt=""><span id="ep-code" class="ep-code"></span></div>
+      <div class="modal-body">
+        <div class="modal-meta"><span id="ep-date"></span><span id="ep-run" class="mono"></span></div>
+        <h3 id="ep-title" class="modal-title"></h3>
+        <p id="ep-loc" class="muted"></p>
+        <p id="ep-note" class="modal-note modal-letter"></p>
+        <button id="ep-secret-btn" class="btn btn-chip">🤫 Tap for a secret</button>
+        <p id="ep-secret" class="modal-secret hidden"></p>
+        <div class="modal-nav">
+          <button class="btn btn-chip" id="ep-prev">◀ Previous</button>
+          <button class="btn btn-chip" id="ep-next">Next ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-info" class="modal hidden">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box modal-small glass">
+      <button class="modal-x" data-close aria-label="Close">✕</button>
+      <div class="modal-body">
+        <span class="eyebrow red">Series Info</span>
+        <h3 id="info-title" class="modal-title"></h3>
+        <p id="info-text" class="modal-note"></p>
+        <ul class="info-list">
+          <li><b>Starring:</b> <span id="info-cast"></span></li>
+          <li><b>Premiered:</b> <span id="info-start"></span></li>
+          <li><b>Genre:</b> Romance, Comedy, Happily-Ever-After</li>
+          <li><b>Status:</b> <span class="green">Renewed for infinite seasons</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button class="lb-x" data-close aria-label="Close">✕</button>
+    <button class="lb-arrow lb-prev" id="lb-prev" aria-label="Previous">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lb-arrow lb-next" id="lb-next" aria-label="Next">›</button>
+  </div>
+
+  <!-- ============ MUSIC PLAYER ============ -->
+  <div id="player" class="player glass hidden">
+    <div id="vinyl" class="vinyl"><span></span></div>
+    <div class="player-info">
+      <b id="player-title"></b>
+      <small id="player-artist" class="muted"></small>
+    </div>
+    <div id="eq" class="eq"><i></i><i></i><i></i><i></i></div>
+    <button class="icon-btn" id="pl-prev" aria-label="Previous song">⏮</button>
+    <button class="icon-btn icon-play" id="pl-play" aria-label="Play or pause">▶</button>
+    <button class="icon-btn" id="pl-next" aria-label="Next song">⏭</button>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+  <audio id="bg-audio" preload="auto"></audio>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
