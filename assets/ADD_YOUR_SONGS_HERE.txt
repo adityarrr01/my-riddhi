@@ -1,0 +1,7 @@
+Add your 5 files here, named exactly:
+song-1.mp3   = the Netflix-style intro sound (plays when the curtain opens)
+song-2.mp3   = your song 1
+song-3.mp3   = your song 2
+song-4.mp3   = your song 3
+song-5.mp3   = your song 4
+(See edit.md for details.)
