@@ -13,7 +13,7 @@ window.OURFLIX = {
   hisNick: "Adi",
 
   /* ✏️ Developer credit shown in the footer (bottom of the page) */
-  developer: "Ayush",
+  developer: "Adi and Ayush",
 
   /* The moment the story began: 20 Dec 2025, 5:35 PM (evening), India time */
   start: "2025-12-20T17:35:00+05:30",
@@ -35,7 +35,7 @@ window.OURFLIX = {
   page: {
     title: "Season 1 of Us",
     badge: "#1 IN ROMANCE TODAY • RIDDHI & ADITYA",
-    synopsis: "We met in person just once — on Kargil Vijay Diwas, 2024. Then on 20 December 2025 at 5:35 PM, our story officially began. Every day since, Mohtarma, has been my favourite episode — and we're only just getting started.",
+    synopsis: "We met in person just once — on Kargil Vijay Diwas, 2024, A small eye contact took my heart. Then on 20 December 2025 at 5:35 PM, our story officially began. Every day since, Mohtarma, has been my favourite episode — and we're only just getting started.",
     welcome: "Welcome to Season 1 of Us, Mohtarma ❤️",
     reasonsTitle: "Why I Love You",
     watchingAs: "Watching as: Mohtarma"
@@ -94,18 +94,18 @@ window.OURFLIX = {
       secret: "I would happily replay that evening on repeat. Every. Single. Time. ❤️"
     },
     {
-      code: "S1:E2", title: "100 Days of Us", milestone: { days: 100 }, runtime: "100 days",
-      location: "A hundred little reasons",
+      code: "S1:E2", title: "150 Days of Us", milestone: { days: 150 }, runtime: "150 days",
+      location: "A hundreds of little reasons",
       src: "assets/images/aditya-08.jpg", focus: "50% 35%",
       note: "A hundred days of laughs, long chats and you turning ordinary days into special ones. It still feels like the first chapter.",
       letter: ``,
-      secret: "100 days down — and I'd still choose you on day 1,000."
+      secret: "150 days down — and I'd still choose you on day 1,000000000."
     },
     {
-      code: "S1:E3", title: "Half a Year, Whole Heart", milestone: { months: 6 }, runtime: "6 months",
-      location: "Six months strong",
+      code: "S1:E3", title: " More than Half a Year, Whole Heart", milestone: { months: 9 }, runtime: "9 months",
+      location: "Nine months unbreakable",
       src: "assets/images/riddhi-10.jpg", focus: "50% 25%",
-      note: "Six months in, and you're still my favourite notification, my calm and my chaos — all in one person.",
+      note: "nine months in, and you're still my favourite notification, my calm and my chaos — all in one person.",
       letter: ``,
       secret: "My heart still does a tiny jump whenever your name pops up on my screen."
     },
@@ -115,7 +115,7 @@ window.OURFLIX = {
       src: "assets/images/together.jpg", focus: "50% 35%",
       note: "Thank you for being my person, Mohtarma. Here's to Season 2, Season 3, and a hundred more seasons of us.",
       letter: ``,
-      secret: "Happy forever, my love. — Adi"
+      secret: "I LOVE YOU, MY MOMMY. — Adi"
     }
   ],
 
@@ -198,7 +198,8 @@ window.OURFLIX = {
     hint: "Tap the envelope to open it 💌",
     to: "To: Mohtarma ❤️",
     from: "With love, Adi",
-    letter: ``
+    letter: `Dear bacha
+            I hope you liked my little effort to bring a huge smile on your cutest face this showcase is still a very small percentage of love that I do to you, Its a way to be sorry of mine and others actions that hurted you somewhere. Love I am not perfect,I may not be interesting,I may not be facinating but I want to be all those for you and I will keep trying for the same, I want to give you the best of this world,It's like sab kuch kardu aapke liye jo kar sakta hun, we got one life and in this life I want to be yours for lifetime, I have never seen the most perfect person like you, my friends want to flirt with you, and I am the proudest boyfriend ever, your one thought can give me such peace as I have achieved heaven, jitni tareef karu utni kam, In one word, you are INCARNATION of god, I love you my Riddhi, LOVE YOU FOREVER FOR INFINITE TIMES😘💕  `
   },
 
   /* ✏️ EDIT 5 — CAST & CREW cards (tap a card to show the "egg" secret line) */
